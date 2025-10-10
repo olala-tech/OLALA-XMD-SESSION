@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
 
-    async function OLALA-TECH-XMD() {
+    async function OLALATECHXMD() {
         const { state, saveCreds } = await useMultiFileAuthState('./temp/' + id);
         try {
             const client = makeWASocket({
@@ -81,7 +81,7 @@ https://wa.me/254101457182
                     removeFile('./temp/' + id);
                 } else if (connection === 'close' && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode !== 401) {
                     await delay(10000);
-                    OLALA-TECH-XMD();
+                    OLALATECHXMD();
                 }
             });
         } catch (err) {
@@ -93,7 +93,7 @@ https://wa.me/254101457182
         }
     }
 
-    await OLALA-TECH-XMD();
+    await OLALATECHXMD();
 });
 
 module.exports = router;
