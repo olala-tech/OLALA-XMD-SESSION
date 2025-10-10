@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OLALA-TECH-XMD | SESSION GENERATOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Background Image */
+    body {
+      background: url('https://files.catbox.moe/37cluf.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 12px rgba(255,0,170,0.8);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #ddd;
+      max-width: 600px;
+    }
+
+    .btn {
+      --color: #ff00aa;
+      --color2: #000;
+      background: #0c0c0c;
+      border: 1px solid var(--color);
+      color: var(--color);
+      padding: 0.9em 2em;
+      font-size: 16px;
+      border-radius: 8px;
+      margin: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: 0.4s ease;
+      letter-spacing: 1px;
+    }
+
+    .btn::before,
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120%;
+      height: 0%;
+      background: var(--color);
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: all 0.4s ease;
+      z-index: -1;
+    }
+
+    .btn:hover::before {
+      height: 500%;
+    }
+
+    .btn:hover {
+      color: var(--color2);
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>PRINCESS RUBY</h1>
+    <p>Welcome to the official <strong>Session Generator</strong> for OLALA-TECH-XMD Bot.<br>
+       Use the options below to generate your secure session.</p>
+
+    <!-- Action Buttons -->
+    <button onclick="window.open('/pair')" class="btn">PAIR CODE</button>
+    <button onclick="window.open('/qr')" class="btn">QR SCAN</button>
+    <button onclick="window.open('https://github.com/OLALA-TECH/OLALA-TECH-XMD/fork')" class="btn">REPO FORK</button>
+
+    <footer>Powered by OLALA-TECH-XMD ✦</footer>
+  </div>
+</body>
+</html>
