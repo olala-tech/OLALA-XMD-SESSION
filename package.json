@@ -18,6 +18,7 @@
     "cheerio": "^1.0.0-rc.12",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
+    "jimp": "^0.22.10",
     "pino": "^8.1.0",
     "phone": "3.1.30",
     "body-parser": "^1.20.1",
