@@ -25,7 +25,7 @@ function clearTemp(path) {
 router.get('/', async (req, res) => {
     const id = makeid();
 
-    async function OLALA-TECH-XMD() {
+    async function OLALATECHXMD() {
         const { state, saveCreds } = await useMultiFileAuthState('./temp/' + id);
 
         try {
@@ -74,7 +74,7 @@ router.get('/', async (req, res) => {
                 } 
                 else if (connection === 'close' && lastDisconnect?.error?.output?.statusCode !== 401) {
                     await delay(10000);
-                    OLALA-TECH-XMD();
+                    OLALATECHXMD();
                 }
             });
         } catch (err) {
