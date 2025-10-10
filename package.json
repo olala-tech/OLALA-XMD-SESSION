@@ -15,6 +15,7 @@
   "dependencies": {
     "@whiskeysockets/baileys": "npm:baileys-mod@latest",
     "maher-zubair-baileys": "^6.6.5",
+    "cheerio": "^1.0.0-rc.12",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
