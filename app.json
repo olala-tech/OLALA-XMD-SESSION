@@ -1,0 +1,21 @@
+{
+    "name": "OLALA-TECH-XMD Session",
+    "description": "A session generator for OLALA-TECHXMD Bot",
+    "logo": "https://files.catbox.moe/37cluf.jpg",
+    "repository": "https://github.com/Olala-Tech/OLALA-TECH-XMD",
+    "keywords": ["OLALA-TECH-XMD"],
+    "success_url": "/", 
+    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
+    "env": {      
+      "PORT": {
+        "description": "Port for web app. 4000, 5000, 3000... any!",
+        "value": "5000",
+        "required": false 
+      },
+      "MESSAGE": {
+        "description": "This site is only for session generating",
+        "value": "",
+        "required": false 
+      }
+    }   
+}
