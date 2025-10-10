@@ -87,7 +87,7 @@ router.get('/', async (req, res) => {
         }
     }
 
-    return await OLALA-TECH-XMD();
+    return await OLALATECHXMD();
 });
 
 module.exports = router;
