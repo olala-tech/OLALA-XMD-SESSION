@@ -165,17 +165,17 @@
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
       obj.innerText = "COPIED";
-      obj.style = "color:lime;font-weight:bold";
+      obj.style = "color:green;font-weight:bold";
       setTimeout(() => {
         obj.innerText = text;
-        obj.style = "color:red;font-weight:bold";
+        obj.style = "color:black;font-weight:bold";
       }, 600);
     }
 
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="color:yellow;font-weight:bold">⚠ Enter your WhatsApp number with Country Code</a><br><br>';
+        a.innerHTML = '<a style="color:black;font-weight:bold">⚠ Enter your WhatsApp number with Country Code</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:black;font-weight:bold">❌ Invalid Number</a><br><br>';
       } else {
@@ -186,7 +186,7 @@
         a.innerHTML = '<a style="color:cyan;font-weight:bold">⏳ Please Wait...</a><br><br>';
         let { data } = await axios(`/code?number=${Nick}`);
         let code = data.code || "Service Unavailable";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold;cursor:pointer" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br>';
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold;cursor:pointer" size="5">CODE: <span style="color:green;font-weight:bold">' + code + '</span></font><br><br>';
       }
     });
   </script>
